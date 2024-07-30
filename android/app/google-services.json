@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "380746467890",
+    "project_id": "device-management-43211",
+    "storage_bucket": "device-management-43211.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380746467890:android:d3c0f214afd02c9b390a2b",
+        "android_client_info": {
+          "package_name": "com.device_management"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApBWUABXIusWxrlvdBt9ttvTd0uSISTQY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

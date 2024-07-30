@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Device Info</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 20px;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .info-box {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    p {
+      font-size: 18px;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Device Info</h1>
+  <div class="info-box">
+    <p id="deviceName"></p>
+  </div>
+  <div class="info-box">
+    <p id="deviceRoom"></p>
+  </div>
+  <div class="info-box">
+    <p id="deviceSpecs"></p>
+  </div>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const deviceName = urlParams.get('deviceName');
+    const deviceRoom = urlParams.get('deviceRoom');
+    const deviceSpecs = urlParams.get('deviceSpecs');
+
+    document.getElementById('deviceName').textContent = `Device Name: ${deviceName}`;
+    document.getElementById('deviceRoom').textContent = `Device Room: ${deviceRoom}`;
+    document.getElementById('deviceSpecs').textContent = `Device Specs: ${deviceSpecs}`;
+  </script>
+</body>
+</html>
